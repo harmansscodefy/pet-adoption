@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Your Pet – Happy Paws</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="project.css" />
+</head>
+
+<body class="form-page">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Happy Paws</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+            <li><a href="cats.html">Cats</a></li>
+            <li><a href="birds.html">Birds</a></li>
+            <li><a class="active" href="list-your-pet.html">List Your Pet</a></li>
+        </ul>
+    </nav>
+
+    <!-- FORM HEADING -->
+    <section class="hero fade-in small-hero">
+        <div class="text fade-in">
+            <h1>List Your Pet for Adoption 🐾</h1>
+            <p>Fill out the details below, and we will help find a caring home for your pet.</p>
+        </div>
+    </section>
+
+    <div class="wave"></div>
+
+    <!-- FORM BOX -->
+    <h1 class="form-title" style="padding-left: 350px;">List Your Pet for Adoption 🐾</h1>
+
+<form class="pretty-form" >
+
+    <!-- Pet Details -->
+    <div class="form-group">
+        <label>Pet Name</label>
+        <input type="text" placeholder="Enter pet name">
+    </div>
+
+    <div class="form-group">
+        <label>Pet Type</label>
+        <select>
+            <option>Select type</option>
+            <option>Dog</option>
+            <option>Cat</option>
+            <option>Bird</option>
+            
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Breed</label>
+        <input type="text" placeholder="Breed">
+    </div>
+
+    <div class="form-group">
+        <label>Age</label>
+        <input type="text" placeholder="Age">
+    </div>
+
+    <div class="form-group full">
+        <label>Description</label>
+        <textarea placeholder="Write a short description"></textarea>
+    </div>
+
+    <!-- Owner Details -->
+    <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" placeholder="Enter your name">
+    </div>
+
+    <div class="form-group">
+        <label>Phone Number</label>
+        <input type="text" placeholder="Enter phone number">
+    </div>
+
+    <div class="form-group full">
+        <label>Email</label>
+        <input type="email" placeholder="Enter email">
+    </div>
+
+    <button type="submit"id="submit-btn" >Submit Listing</button>
+ 
+</form>
+<script src="script.js"></script>
+
+    <!-- FOOTER -->
+    <footer style="text-align:center; padding:20px 0;">
+        © 2025 Happy Paws Adoption | List Your Pet
+    </footer>
+
+</body>
+</html>

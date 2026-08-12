@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Paws – Pet Adoption</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="project.css">
+</head>
+
+<body class="home-page">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">Happy Paws</a>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+      <li><a href="cats.html">Cats</a></li>
+      <li><a href="birds.html">Birds</a></li>
+      <li><a href="list-your-pet.html">List Your Pet</a></li>
+      <li><a href="adoption-form.html">Adopt</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero fade-in">
+    <div class="text">
+      <h1>Find a furry (or feathery) friend today 🐾</h1>
+      <h2 style="color: black; font-family: Georgia, 'Times New Roman', Times, serif;">
+        We connect loving homes with pets in need. Adopt a companion and make life happier—for both of you.
+      </h2>
+
+      <div class="cta" style="margin-top: 20px;">
+        <button class="btn" onclick="location.href='dogs.html'">Explore Pets</button>
+        <button class="btn secondary" onclick="location.href='adoption-form.html'">Adoption Form</button>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- AVAILABLE ANIMALS -->
+  <section style="padding:48px 0;">
+    <h1 class="section-title" style="font-size: 50px;">Available Animals</h1>
+
+    <div class="container">
+      <div class="grid">
+
+        <!-- Dogs -->
+        <article class="card-thing fade-in" tabindex="0">
+          <img src="images/doghome.jpeg" alt="Dogs">
+          <div class="body">
+            <h3>Dogs</h3>
+            <p>Friendly breeds, mixed pups, and senior dogs waiting for warm homes.</p>
+          </div>
+          <div class="card-actions">
+            <a class="adopt" href="dogs.html">View Dogs</a>
+            <a class="details" href="adoption-form.html">Adopt</a>
+          </div>
+        </article>
+
+        <!-- Cats -->
+        <article class="card-thing fade-in" tabindex="0">
+          <img src="images/cathome.jpeg" alt="Cats">
+          <div class="body">
+            <h3>Cats</h3>
+            <p>Calm lap cats and playful kittens ready for cuddles.</p>
+          </div>
+          <div class="card-actions">
+            <a class="adopt" href="cats.html">View Cats</a>
+            <a class="details" href="adoption-form.html">Adopt</a>
+          </div>
+        </article>
+
+        <!-- Birds -->
+        <article class="card-thing fade-in" tabindex="0">
+          <img src="images/popo.jpeg" alt="Birds">
+          <div class="body">
+            <h3>Birds</h3>
+            <p>Colourful parrots and small birds for attentive owners.</p>
+          </div>
+          <div class="card-actions">
+            <a class="adopt" href="birds.html">View Birds</a>
+            <a class="details" href="adoption-form.html">Adopt</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OWNER CTA -->
+  <section style="padding:36px 0;">
+    <div class="container">
+      <div class="form-card" style="text-align:center; padding:24px;">
+        <h3 style="margin-bottom:8px;">Want to put a pet up for adoption?</h3>
+        <p class="small-note">Owners can list their pet on our site — we'll help find them a loving home.</p>
+
+        <div style="display:flex;gap:10px;justify-content:center;margin-top:14px">
+          <button class="btn" onclick="location.href='list-your-pet.html'">List Your Pet</button>
+          <button class="btn secondary" onclick="location.href='adoption-form.html'">Fill Adoption Form</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer  class=logo style="text-align:center; padding:20px; background-color: white;">>
+    <div class="footer-grid" style="padding-bottom:12px;">
+      <div><strong>Happy Paws</strong><div class="small-note">Connecting pets & people</div></div>
+      <div><div class="small-note">Email: hello@happypaws.example</div></div>
+      <div><div class="small-note">Phone: +1 555 123 456</div></div>
+    </div>
+
+    <div style="margin-top:12px;opacity:0.9">© 2025 Happy Paws Adoption</div>
+  </footer>
+
+</divbody>
+</html>

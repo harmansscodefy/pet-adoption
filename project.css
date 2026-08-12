@@ -1,0 +1,456 @@
+
+/* =========================
+   Cleaned project.css
+   (Option B layout - duplicates removed)
+   ========================= */
+
+/* Reset + base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fff6f2;
+    color: #060504;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.45;
+}
+
+/* Page background helpers (keep images unchanged) */
+.dogu,
+.birds,
+.cats,
+.home-page {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.home-page {
+    background: linear-gradient(rgba(175,172,172,0.6), rgba(200,200,205,0.5)),
+                url("images/backgroun.webp");
+}
+
+.dogu {
+    background: linear-gradient(rgba(175,172,172,0.7), rgba(200,200,205,0.5)),
+                url("images/dogu4.jpg");
+}
+
+.birds {
+    background: linear-gradient(rgba(175,172,172,0.7), rgba(200,200,205,0.5)),
+                url("images/birds6.webp");
+}
+
+.cats {
+    background: linear-gradient(rgba(175,172,172,0.1), rgba(200,200,205,0.5)),
+                url("images/MHJU5T.jpg");
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 18px;
+    text-align: center;
+}
+
+/* =========================
+   Forms
+   ========================= */
+.pretty-form {
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pretty-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.pretty-form .form-group.full {
+    grid-column: span 2;
+}
+
+.pretty-form label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #593020;
+    font-size: 14px;
+}
+
+.pretty-form input,
+.pretty-form select,
+.pretty-form textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #f0c8b0;
+    font-size: 15px;
+    background: #fff;
+    outline: none;
+    transition: box-shadow 0.25s, border-color 0.25s, transform 0.15s;
+}
+
+.pretty-form input:focus,
+.pretty-form textarea:focus,
+.pretty-form select:focus {
+    border-color: #ff9a76;
+    box-shadow: 0 0 8px rgba(255,154,118,0.35);
+    transform: translateY(-2px);
+}
+
+.submit-btn,
+.pretty-form button,
+.adopt.submit-btn {
+    grid-column: span 2;
+    width: 220px;
+    margin: 12px auto 0;
+    padding: 10px 18px;
+    border-radius: 28px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, #ff8d73, #ffb56b);
+    color: #fff;
+    font-weight: 600;
+    transition: transform 0.18s ease, box-shadow 0.2s ease;
+}
+
+.submit-btn:hover,
+.pretty-form button:hover,
+.adopt.submit-btn:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 16px 30px rgba(12, 10, 10, 0.15);
+}
+
+/* =========================
+   Background Blobs
+   ========================= */
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(160px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.blob1 {
+    width: 350px;
+    height: 350px;
+    background: #ffd4c7;
+    top: 120px;
+    left: -80px;
+}
+
+.blob2 {
+    width: 300px;
+    height: 300px;
+    background: #ffe3f5;
+    top: 350px;
+    right: -60px;
+}
+
+/* =========================
+   NAVBAR (Option B - older)
+   ========================= */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: linear-gradient(90deg, #ff9771, #ffb86b);
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+.navbar .logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: transform 0.18s ease, opacity 0.18s ease;
+    padding: 6px 8px;
+    border-radius: 8px;
+}
+
+.navbar ul li a:hover {
+    opacity: 0.85;
+    transform: scale(1.06);
+}
+
+.navbar .active {
+    color: #6f1d1b;
+    font-weight: 700;
+}
+
+/* =========================
+   HERO
+   ========================= */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 60px;
+    gap: 40px;
+}
+
+.hero .text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.12;
+    color: #4d2c22;
+}
+
+.hero h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #5a4b47;
+}
+
+.hero p {
+    margin-top: 14px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* CTA buttons (used on homepage and cards) */
+.btn {
+    padding: 12px 26px;
+    border: none;
+    border-radius: 28px;
+    color: white;
+    cursor: pointer;
+    margin-right: 12px;
+    font-size: 16px;
+    background: linear-gradient(90deg, #ff8d73, #ffb56b);
+    transition: transform 0.18s ease, box-shadow 0.2s ease;
+}
+
+.btn.secondary {
+    background: #ffafbb;
+    color: #4d2c22;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 30px rgba(12, 10, 10, 0.25);
+}
+
+/* =========================
+   CARDS
+   ========================= */
+.card,
+.card-thing {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.card {
+    width: 350px;
+    max-width: 100%;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+}
+
+.card img,
+.card-thing img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.card:hover,
+.card-thing:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.12);
+}
+
+.card .padding,
+.card-thing .body {
+    padding: 15px 18px;
+}
+
+/* Card layout grid used on listing pages */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    padding: 20px 0 40px;
+}
+
+/* Card actions (buttons/links) */
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 16px;
+    align-items: center;
+}
+
+.card-actions .adopt {
+    background: #ff8d73;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.card-actions .adopt:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(12,10,10,0.12);
+}
+
+.card-actions .details {
+    color: #444;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+/* =========================
+   Section Title + Wave
+   ========================= */
+.section-title {
+    text-align: center;
+    margin: 60px 0 20px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #4d2c22;
+}
+
+.wave {
+    width: 100%;
+    height: 85px;
+    background: url('data:image/svg+xml;utf8,<svg width="100%" height="100%" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg"><path fill="%23fff6f2" d="M0,256L80,256C160,256,320,256,480,245.3C640,235,800,213,960,176C1120,139,1280,85,1360,58.7L1440,32V320H1360C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320H0Z"></path></svg>') no-repeat center/cover;
+    margin-top: 20px;
+}
+
+/* =========================
+   Blobs (fallback - keep behind content)
+   ========================= */
+.blob {
+    opacity: 0.6;
+}
+
+/* =========================
+   Animations
+   ========================= */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.0s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.float {
+    animation: floating 4.5s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0%,100% { transform: translateY(0px); }
+    50%    { transform: translateY(-12px); }
+}
+
+/* =========================
+   Utility / small helpers
+   ========================= */
+.padding {
+    padding: 15px 20px;
+}
+
+.small-note {
+    font-size: 13px;
+    color: rgba(0,0,0,0.6);
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+    .hero {
+        padding: 40px 22px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .navbar {
+        padding: 14px 18px;
+    }
+
+    .blob1, .blob2 { display: none; }
+}
+
+@media (max-width: 480px) {
+    .pretty-form {
+        grid-template-columns: 1fr;
+        padding: 18px;
+    }
+
+    .card img, .card-thing img {
+        height: 180px;
+    }
+}
+.wave-container {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-container svg {
+    display: block;
+    width: 100%;
+    height: 120px; /* adjust wave height */
+}
+/*
+<div class="wave-container svg">
+    <svg viewBox="0 0 1440 320">
+        <path fill="#ffffff" fill-opacity="1"
+            d="M0,160L60,138.7C120,117,240,75,360,80C480,85,600,139,720,160C840,181,960,171,1080,170.7C1200,171,1320,181,1380,186.7L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+        </path>
+    </svg>
+</div> -->
+
